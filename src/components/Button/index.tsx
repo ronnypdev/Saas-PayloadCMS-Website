@@ -5,6 +5,10 @@ type Button = {
   fontFamily: string
 }
 
-export default function Button() {
-  return <button>index</button>
+export default function Button({ text, textColor, bgColor, fontFamily }: Button) {
+  return (
+    <>
+      <button className={`inline-block ${textColor} ${bgColor} ${fontFamily}`}>{text}</button>
+    </>
+  )
 }

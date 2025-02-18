@@ -13,9 +13,9 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <body className="w-dvh">
+      <body className="h-dvh">
         <Header />
-        <main className="w-[1440px] max-w-full">{children}</main>
+        <main className="w-7xl max-w-full mx-auto">{children}</main>
       </body>
     </html>
   )
