@@ -8,23 +8,23 @@ type NavBar = {
 
 export default function NavBar({ logo, listItems }: NavBar) {
   return (
-    <>
+    <div className="max-w-full flex items-center justify-between py-[30px]">
       <picture>
         <source srcSet="/abstractly.svg" />
         <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
       </picture>
-      <nav className="max-w-full">
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
+      <nav className="nav-list-wrapper ml-10 grow">
+        <ul className="flex items-start">
+          <li className="ml-12">Home</li>
+          <li className="ml-12">Features</li>
+          <li className="ml-12">Pricing</li>
+          <li className="ml-12">About us</li>
+          <li className="ml-12">Contact</li>
         </ul>
       </nav>
       <div className="btn-group">
         <Button
-          text="Manage cookies"
+          text="Learn More"
           textColor="text-black"
           bgColor="bg-white"
           hover="bg-pale-white"
@@ -32,7 +32,7 @@ export default function NavBar({ logo, listItems }: NavBar) {
           disabledButton={false}
         />
         <Button
-          text="Allow cookies"
+          text="See Pricing"
           textColor="text-white"
           bgColor="bg-indigo-700"
           hover="bg-indigo-800"
@@ -40,6 +40,6 @@ export default function NavBar({ logo, listItems }: NavBar) {
           disabledButton={false}
         />
       </div>
-    </>
+    </div>
   )
 }
