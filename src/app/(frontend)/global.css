@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import 'tailwindcss';
+
+@theme {
+  --primary-color: #4338ca;
+  --primary-border-color: #e5e5e5;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #525252;
+  --brand-color: #6366f1;
+  --body-font-size: 16px;
+  --body-text-color: #030712;
+}
+
+body {
+  font-family: var(--font-noto-sans);
+  font-size: var(--body-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
