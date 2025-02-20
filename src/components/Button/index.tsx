@@ -17,7 +17,7 @@ export default function Button({ text, textColor, bgColor, hover, focus, disable
           px-4 py-2.5
           font-medium
           text-base
-          mr-1
+          mr-3
           border-[0.5px]
           rounded-[4px]
           border-(--gray-color)
