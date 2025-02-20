@@ -23,12 +23,21 @@ export default function NavBar({ logo, listItems }: NavBar) {
         </ul>
       </nav>
       <div className="btn-group">
-        <Button text="Learn More" textColor="text-black" bgColor="bg-white" fontFamily="sans" />
         <Button
-          text="Learn More"
+          text="Manage cookies"
           textColor="text-black"
+          bgColor="bg-white"
+          hover="bg-pale-white"
+          focus="bg-pale-white"
+          disabledButton={false}
+        />
+        <Button
+          text="Allow cookies"
+          textColor="text-white"
           bgColor="bg-indigo-700"
-          fontFamily="sans"
+          hover="bg-indigo-800"
+          focus="bg-indigo-800"
+          disabledButton={false}
         />
       </div>
     </>

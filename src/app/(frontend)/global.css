@@ -1,14 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap'); */
 @import 'tailwindcss';
 
 @theme {
   --primary-color: #4338ca;
-  --primary-border-color: #e5e5e5;
+  --gray-color: #e5e5e5;
   --primary-text-color: #ffffff;
   --secondary-text-color: #525252;
   --brand-color: #6366f1;
   --body-font-size: 16px;
   --body-text-color: #030712;
+  --pale-white: #fafafa;
+  --box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
 }
 
 body {
