@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Button from '@/components/Button'
+import { X } from 'lucide-react'
+import { Menu } from 'lucide-react'
 
 type NavBar = {
   logo: string
@@ -8,12 +10,12 @@ type NavBar = {
 
 export default function NavBar({ logo, listItems }: NavBar) {
   return (
-    <div className="max-w-full flex items-center justify-between py-[30px]">
+    <div className="max-w-full flex items-center justify-between py-[30px] max-lg:pl-8 max-lg:pr-8">
       <picture>
         <source srcSet="/abstractly.svg" />
         <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
       </picture>
-      <nav className="nav-list-wrapper ml-10 grow">
+      <nav className="nav-list-wrapper ml-10 grow hidden lg:block">
         <ul className="flex items-start">
           <li className="ml-12">Home</li>
           <li className="ml-12">Features</li>
@@ -22,7 +24,7 @@ export default function NavBar({ logo, listItems }: NavBar) {
           <li className="ml-12">Contact</li>
         </ul>
       </nav>
-      <div className="btn-group">
+      <div className="btn-group hidden lg:block">
         <Button
           text="Learn More"
           textColor="text-black"
@@ -40,6 +42,7 @@ export default function NavBar({ logo, listItems }: NavBar) {
           disabledButton={false}
         />
       </div>
+      <Menu className="hidden max-lg:block cursor-pointer" />
     </div>
   )
 }
