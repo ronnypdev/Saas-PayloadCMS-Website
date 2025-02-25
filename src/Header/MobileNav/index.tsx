@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import Button from '@/components/Button'
-import { Menu } from 'lucide-react'
+import { X } from 'lucide-react'
 
-type NavBar = {
+type MobileNav = {
   logo: string
-  listItems: string[]
+  mobileListItems: string[]
 }
 
-export default function NavBar({ logo, listItems }: NavBar) {
+export default function MobileNav({ logo, mobileListItems }: MobileNav) {
   return (
-    <div className="max-w-full flex items-center justify-between py-[30px] max-ml:hidden max-mxl:pl-8 max-mxl:pr-8">
+    <div className="max-w-full flex items-center justify-between py-[30px] md:hidden max-mxl:pl-8 max-mxl:pr-8">
       <picture>
         <source srcSet="/abstractly.svg" />
         <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
@@ -41,7 +41,7 @@ export default function NavBar({ logo, listItems }: NavBar) {
           disabledButton={false}
         />
       </div>
-      <Menu className="hidden max-mxl:block cursor-pointer" />
+      <X className="hidden max-mxl:block cursor-pointer" />
     </div>
   )
 }
