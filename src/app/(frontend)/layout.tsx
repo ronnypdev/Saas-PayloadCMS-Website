@@ -22,7 +22,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
     <html lang="en">
       <body className={`h-dvh ${notoSans.variable}`}>
         <Header />
-        <main className="w-7xl max-w-full mx-auto">{children}</main>
+        <main className="w-(--main-container) max-w-full mx-auto">{children}</main>
       </body>
     </html>
   )
