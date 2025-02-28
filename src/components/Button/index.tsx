@@ -4,10 +4,21 @@ type Button = {
   bgColor: string
   hover: string
   focus: string
+  buttonWidth?: string
+  buttonHeight?: string
   disabledButton: boolean
 }
 
-export default function Button({ text, textColor, bgColor, hover, focus, disabledButton }: Button) {
+export default function Button({
+  text,
+  textColor,
+  bgColor,
+  hover,
+  focus,
+  buttonWidth,
+  buttonHeight,
+  disabledButton,
+}: Button) {
   return (
     <>
       <button
@@ -22,8 +33,10 @@ export default function Button({ text, textColor, bgColor, hover, focus, disable
           rounded-[4px]
           border-(--gray-color)
           shadow-(--box-shadow)
-          w-[176px]
-          h-[44px]
+          w-[${buttonWidth}]
+          h-[${buttonHeight}]
+          max-mxl:w-full
+          max-mxl:mb-4
           hover:${hover}
           focus:${focus}
           ${textColor} ${bgColor}
