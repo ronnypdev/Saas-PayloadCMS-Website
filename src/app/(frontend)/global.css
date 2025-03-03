@@ -2,9 +2,10 @@
 
 @theme {
   --main-container: 90rem;
-  --breakpoint-mxl: 65.94rem;
+  --breakpoint-mxl: 67.688rem;
 
   --mobile-nav-width: 23.438rem;
+  --overlay-hidden: -375px;
 
   --primary-color: #4338ca;
   --gray-color: #e5e5e5;
