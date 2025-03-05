@@ -11,7 +11,8 @@ type NavBar = {
 export default function NavBar({ logo, listItems }: NavBar) {
   return (
     <>
-      <div className="max-w-full flex items-center justify-between px-28 pt-4 pb-0 max-mxl:hidden max-mxl:pl-7 max-mxl:pr-7">
+      <MobileNav />
+      <div className="max-w-full flex items-center justify-between px-28 pt-4 pb-0 max-mxl:pl-7 max-mxl:pr-7">
         <picture>
           <source srcSet="/abstractly.svg" />
           <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
@@ -49,7 +50,6 @@ export default function NavBar({ logo, listItems }: NavBar) {
         </div>
         <Menu className="hidden max-mxl:block cursor-pointer" />
       </div>
-      <MobileNav />
     </>
   )
 }

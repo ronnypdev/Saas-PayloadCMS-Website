@@ -5,7 +5,9 @@
   --breakpoint-mxl: 67.688rem;
 
   --mobile-nav-width: 23.438rem;
-  --overlay-hidden: -375px;
+  --overlay-hidden: translateX(-100%);
+  --overlay-transition: transform 0.5s ease-in-out;
+  --overlay-visible: translateX(0);
 
   --primary-color: #4338ca;
   --gray-color: #e5e5e5;
@@ -26,4 +28,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.menu-open {
+  transform: var(--overlay-visible);
 }
