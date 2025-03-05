@@ -1,21 +1,23 @@
-import Image from 'next/image'
+import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { X } from 'lucide-react'
 
 type MobileNav = {
-  logo: string
   mobileListItems: string[]
 }
 
-export default function MobileNav({ logo, mobileListItems }: MobileNav) {
+export default function MobileNav({ mobileListItems }: MobileNav) {
   return (
     <div className="fixed top-0 bottom-0 w-(--mobile-nav-width) transform-(--overlay-hidden) transition-(--overlay-transition) bg-white mxl:hidden">
       <div className="max-w-full flex flex-col items-center h-full min-h-full py-8 pb-4 px-4">
         <div className="mobile-logo-wrapper w-full flex justify-between items-center mt-8 my-6 mx-4">
-          <picture>
-            <source srcSet="/abstractly.svg" />
-            <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
-          </picture>
+          <Logo
+            logoSrcSet="/abstractly.svg"
+            logoSrc="/abstractly.svg"
+            logoAltText="abstractly logo"
+            logoWidth={112}
+            logoHeight={32}
+          />
           <X className="hidden max-mxl:block cursor-pointer" />
         </div>
         <nav className="nav-list-wrapper w-full min-h-auto grow">

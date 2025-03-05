@@ -1,22 +1,24 @@
 import MobileNav from '../MobileNav'
-import Image from 'next/image'
+import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 import { Menu } from 'lucide-react'
 
 type NavBar = {
-  logo: string
   listItems: string[]
 }
 
-export default function NavBar({ logo, listItems }: NavBar) {
+export default function NavBar({ listItems }: NavBar) {
   return (
     <>
       <MobileNav />
       <div className="max-w-full flex items-center justify-between px-28 pt-4 pb-0 max-mxl:pl-7 max-mxl:pr-7">
-        <picture>
-          <source srcSet="/abstractly.svg" />
-          <Image src="/abstractly.svg" alt="abstractly logo" width={112} height={32} />
-        </picture>
+        <Logo
+          logoSrcSet="/abstractly.svg"
+          logoSrc="/abstractly.svg"
+          logoAltText="abstractly logo"
+          logoWidth={112}
+          logoHeight={32}
+        />
         <nav className="nav-list-wrapper ml-10 grow hidden mxl:block">
           <ul className="flex items-start">
             <li className="ml-8">Home</li>
