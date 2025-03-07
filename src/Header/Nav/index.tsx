@@ -2,7 +2,7 @@ import Logo from '@/components/Logo'
 import Button from '@/components/Button'
 
 type NavBar = {
-  listItems: string[]
+  listItems?: string[]
 }
 
 export default function NavBar({ listItems }: NavBar) {
