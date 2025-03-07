@@ -1,7 +1,5 @@
-import MobileNav from '../MobileNav'
 import Logo from '@/components/Logo'
 import Button from '@/components/Button'
-import { Menu } from 'lucide-react'
 
 type NavBar = {
   listItems: string[]
@@ -10,8 +8,7 @@ type NavBar = {
 export default function NavBar({ listItems }: NavBar) {
   return (
     <>
-      <MobileNav />
-      <div className="max-w-full flex items-center justify-between px-28 pt-4 pb-0 max-mxl:pl-7 max-mxl:pr-7">
+      <div className="max-w-full w-full flex items-center justify-between mxl:px-28 mxl:pt-4 mxl:pb-0">
         <Logo
           logoSrcSet="/abstractly.svg"
           logoSrc="/abstractly.svg"
@@ -50,7 +47,6 @@ export default function NavBar({ listItems }: NavBar) {
             disabledButton={false}
           />
         </div>
-        <Menu className="hidden max-mxl:block cursor-pointer" />
       </div>
     </>
   )
