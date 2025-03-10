@@ -8,6 +8,7 @@
   --overlay-hidden: translateX(-100%);
   --overlay-transition: transform 0.5s ease-in-out;
   --overlay-visible: translateX(0);
+  --tablet-view: 768px;
 
   --primary-color: #4338ca;
   --gray-color: #e5e5e5;
