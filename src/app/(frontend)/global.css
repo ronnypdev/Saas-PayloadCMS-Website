@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --main-container: 90rem;
+  --breakpoint-mxl: 67.688rem;
+
+  --mobile-nav-width: 23.438rem;
+  --overlay-hidden: translateX(-100%);
+  --overlay-transition: transform 0.5s ease-in-out;
+  --overlay-visible: translateX(0);
+  --tablet-view: 768px;
+
+  --primary-color: #4338ca;
+  --gray-color: #e5e5e5;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #525252;
+  --brand-color: #6366f1;
+  --body-font-size: 16px;
+  --body-text-color: #030712;
+  --pale-white: #fafafa;
+  --box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  --body-gradient: linear-gradient(148deg, #f9fafb 8.89%, #d2d6db 100.48%);
+}
+
+body {
+  font-family: var(--font-noto-sans);
+  font-size: var(--body-font-size);
+  background-image: var(--body-gradient);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.menu-open {
+  transform: var(--overlay-visible);
+}
